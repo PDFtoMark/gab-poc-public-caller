@@ -1,0 +1,7 @@
+name: caller
+on:
+  workflow_dispatch:
+jobs:
+  call:
+    uses: PDFtoMark/gab-poc-private-callee/.github/workflows/callee2.yml@main
+    secrets: inherit
