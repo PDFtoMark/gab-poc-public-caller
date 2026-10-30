@@ -1,0 +1,10 @@
+name: caller3
+on:
+  workflow_dispatch:
+jobs:
+  validate-articles:
+    uses: PDFtoMark/gab-poc-private-callee/.github/workflows/callee3.yml@main
+    with:
+      debug: true
+    secrets:
+      SOME_SECRET: ${{ secrets.SOME_SECRET }}
