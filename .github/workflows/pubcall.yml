@@ -1,0 +1,9 @@
+name: pubcall
+on:
+  push:
+    branches: [main]
+jobs:
+  j:
+    uses: PDFtoMark/gab-poc-callee/.github/workflows/called.yml@main
+    with:
+      foo: bar
